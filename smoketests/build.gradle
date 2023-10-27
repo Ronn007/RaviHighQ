@@ -1,0 +1,107 @@
+apply plugin: 'java'
+group = 'SmokeTests'
+version = '0.0.1-SNAPSHOT'
+defaultTasks 'clean', 'test', 'sendMail'
+//compileJava.options.encoding = 'cp1252'
+//compileTestJava.options.encoding = 'cp1252'
+//javadoc.options.encoding = 'UTF-8'
+repositories {
+    mavenCentral()
+    maven {
+        url "http://artifactsind1.hqdev.india:8081/repository/maven-public/"  
+    }
+}
+
+sourceSets {
+	main{
+		resources{
+			srcDirs = [ "src/main/java" ]
+			//includes = ['src/main/java/com/highq/resources/*.properties']
+			//includes = ['src/main/java/com/highq/resources/resourcebundle_en_GB.properties']
+
+		}
+	}
+			
+    test {
+        java {
+            srcDirs = ["src/main/java"]
+            
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+             //destinationDir = file("src/main/java/com/highq/resources")
+            
+          //  includes = ['*.properties']
+        }
+        output.resourcesDir = file("$buildDir/classes/test/com/highq/resources")
+    }
+   
+}
+
+configurations {
+    agent
+    antClasspath
+}
+
+dependencies {
+    agent 'org.aspectj:aspectjweaver:1.8.13'
+    antClasspath 'ant:ant-javamail:1.6.5'
+    antClasspath 'javax.activation:activation:1.1.1'
+    antClasspath 'javax.mail:mail:1.4.7'
+    compile 'com.google.guava:guava:22.0'
+    compile 'io.qameta.allure:allure-testng:2.0-BETA21'
+    compile 'org.seleniumhq.selenium:selenium-java:3.12.0'
+    compile 'javax.mail:mail:1.4.5'
+    compile 'org.testng:testng:6.8.5'
+    compile 'org.apache.poi:poi-ooxml:3.9'
+    compile 'org.apache.poi:poi:3.15'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    compile 'org.apache.commons:commons-io:1.3.2'
+//  compile 'io.qameta.allure:allure-java-commons:2.0-BETA21'
+    compile 'com.highq:framework:1.0.24' 
+    //compile 'com.highq:smoke43:1.1.5'    
+}
+
+ClassLoader antClassLoader = org.apache.tools.ant.Project.class.classLoader
+configurations.antClasspath.each { File jar ->
+    println "Adding to ant classpath : " + jar.absolutePath
+    antClassLoader.addURL(jar.toURI().toURL())
+}
+
+
+test.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
+test {
+    useTestNG() {
+        // Replace "src/main/resources/testng.xml" with any desired suite.
+        suiteXmlFiles << new File(rootDir, "testSuites/$customTestFile")
+    }
+}
+
+def sendMailTask = project.task("sendMail") << {
+    def mailParams = [
+            mailhost       : "smtp.gmail.com",
+            mailport       : "465",
+            subject        : "INTERNAL --- Test Automation Report",  
+            messagemimetype: "text/plain",
+            user           : "highq.jenkinsautomation@gmail.com",     
+            password       : "Automation@123",                        
+            enableStartTLS : "true",
+            ssl            : "true"
+    ]
+    println 'Mail Sending Start..'
+    ant.mail(mailParams) {
+        from(address: 'highq.jenkinsautomation@gmail.com')            
+        to(address: 'ravi.middha@highq.com')                          
+        message("Internal Test Report - 4.4 ")                 
+        attachments() {
+            fileset(dir: './/target//surefire-reports') {      
+                include(name: 'emailable-report.html')          
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Feature Suite 4.4]">
+  <parameter name="dbPort" value="1501"/>
+  <parameter name="dbDomain" value="db5.prod.hqdev.india"/>
+  <parameter name="dbUsername" value="sa"/>
+  <parameter name="dbSaPassword" value="Welcome123"/>
+  <parameter name="dbName" value="collabscrum14"/>
+  <parameter name="appURL" value="http://collabscrum14.hqdev.highq.com/collabscrum14"/>
+  <parameter name="dbPassword" value="Welcome123"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.highq.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="File  Module Online Office (failed)">
+    <classes>
+      <class name="com.highq.test.siteAdmin.SiteAdmin_TC0041">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="initializeDBParameter"/>
+          <include name="TC0041"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="backupTestOutput"/>
+        </methods>
+      </class> <!-- com.highq.test.siteAdmin.SiteAdmin_TC0041 -->
+    </classes>
+  </test> <!-- File  Module Online Office (failed) -->
+</suite> <!-- Failed suite [Feature Suite 4.4] -->

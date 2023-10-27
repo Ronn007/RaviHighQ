@@ -1,0 +1,59 @@
+{
+    "GlobalData": {
+        "sysAdminEmail": "ravi.middha@highq.com",
+        "sysAdminPassword": "Password@123",
+        "OrgData": {
+            "Organization 1": {
+                "name": "highq.com",
+                "Internal": true,
+                "users": ["ravi.middha"]
+            }
+        },
+        "userResetData": {
+            "defaultPassword": "Password@123",
+            "userResetPasswordData": {
+                "Organization 1": {
+                    "name": "highq.com",
+                    "user 1": {
+                        "id": "ravi.middha",
+                        "newPassword": "Password@123"
+                    }
+                }
+            },
+            "userStatus": "Active",
+            "isStatusLocked": false
+        },
+
+
+        "PreConfiguration": {
+            "PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles"],
+            "Sites": {
+                "name": "Dashboard_TC0248"
+            },
+            "SiteGroupPermission": false,
+            "modules": ["Files", "tasks","events","home"],
+            "siteUsers":["ravi.middha@highq.com"],
+            "Users": {
+                "user1": {
+                    "id": "",
+                    "Permissions": {
+                        "Modules": {
+                        "Tasks": {
+                                "View": true,
+                                "Edit": true
+                                }
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+
+                        }
+    
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "dashboard250.com",
+				"Internal": true,
+				"users": ["dashboard.normaluser250"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "dashboard250.com",
+					"user 1": {
+						"id": "dashboard.normaluser250",
+						"newPassword": "Password@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "Dashboard_TCR0250"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["people","activity", "wiki", "files"],
+			"siteUsers":["dashboard.normaluser250@dashboard250.com"],
+			"Users": {
+				"user1": {
+					"id": "dashboard.normaluser250@dashboard250.com",
+					"Permissions": {
+						"Modules": {
+						
+						"Activity": {
+								"View": true
+								}
+						},
+						"Files": {
+							"View": true
+
+						},
+						"AdminGroups": {
+
+						}
+	
+					}
+				}
+			}
+			
+		}
+	}
+}

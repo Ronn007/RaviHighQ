@@ -1,0 +1,93 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "wikitc0165.com",
+				"Internal": true,
+				"users": [
+					"normal.user0165",
+					"admin.user0165"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "wikitc0165.com",
+					"user 1": {
+						"id": "normal.user0165",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "admin.user0165",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "Wiki_TC0165T_1"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"home",
+				"files",
+				"wiki"
+			],
+			"siteUsers": [
+				"normal.user0165@wikitc0165.com",
+				"admin.user0165@wikitc0165.com"
+			],
+			"Users": {
+				"user1": {
+					"id": "normal.user0165@wikitc0165.com",
+					"Permissions": {
+						"Modules": {
+							"Wiki": {
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "admin.user0165@wikitc0165.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

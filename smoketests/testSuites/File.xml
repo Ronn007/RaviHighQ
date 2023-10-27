@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite 4.4">
+	<parameter name="appURL" value="https://autoind6.hqdev.highq.com/autoind6" />
+	<parameter name="dbDomain" value="db8.prod.hqdev.india" />
+	<parameter name="dbPort" value="1501" />
+	<parameter name="dbUsername" value="sa" />
+	<parameter name="dbPassword" value="Welcome123" />
+	<parameter name="dbSaPassword" value="Welcome123" />
+	<parameter name="dbName" value="autoind6" />
+
+	<parameter name="browserType" value="chrome" />
+
+	<listeners>
+		<listener class-name="com.highq.listeners.ScreenshotListener"></listener>
+	</listeners>
+
+
+
+	<test name="File Module">
+		<classes>
+			<class name="com.highq.test.file.File_TC0836" />
+			<class name="com.highq.test.file.File_TC1486" />
+			<class name="com.highq.test.file.File_TC1502" />
+			<class name="com.highq.test.file.File_TC2771" />
+			<class name="com.highq.test.file.File_TC2667" />
+			<class name="com.highq.test.file.File_TC1258" />
+			<class name="com.highq.test.file.File_TC1263" />
+			<class name="com.highq.test.file.File_TC1259" />
+			<class name="com.highq.test.file.File_TC1491" />
+			<class name="com.highq.test.file.File_TC2901" />
+			<class name="com.highq.test.systemAdmin.DocuSignAudit_TC2851" />
+			<class name="com.highq.test.file.File_TC2703" />
+			<class name="com.highq.test.file.File_TC2734" />
+			<class name="com.highq.test.file.File_TC2737" />
+			<class name="com.highq.test.file.Files_TC2722" />
+			<class name="com.highq.test.file.TC2704" />
+
+		</classes>
+	</test>
+
+
+
+</suite>

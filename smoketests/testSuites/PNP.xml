@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite 4.4">
+	<parameter name="appURL"
+		value="https://autoind9.hqdev.highq.com/autoind9" />
+	<parameter name="dbDomain" value="db6.prod.hqdev.india" />
+	<parameter name="dbPort" value="1501" />
+	<parameter name="dbUsername" value="sa" />
+	<parameter name="dbPassword" value="Welcome123" />
+	<parameter name="dbSaPassword" value="Welcome123" />
+	<parameter name="dbName" value="autoind9" />
+	<parameter name="browserType" value="chrome" />
+
+	<listeners>
+		<listener class-name="com.highq.listeners.ScreenshotListener"></listener>
+	</listeners>
+
+	<test name="Task Module">
+		<classes>
+			<class name="com.highq.test.tasks.TaskTC2728" /><!-- Time estimated=25 minutes -->
+			<class name="com.highq.test.tasks.Task_TC2621" />
+			<class name="com.highq.test.tasks.Task_TC2587" />
+			<class name="com.highq.test.tasks.Task_TC2641" />
+			<class name="com.highq.test.tasks.Task_TC2742" />
+			<class name="com.highq.test.tasks.Task_TC2767" />
+		</classes>
+	</test>
+
+	<test name="iSheet Module">
+		<classes>
+			<class name="com.highq.test.iSheet.IsheetTC2777" /> <!-- 11.33975 minutes approximate -->
+			<class name="com.highq.test.iSheet.IsheetTC2746" /> <!-- 37.6051 minutes approximate -->
+			<class name="com.highq.test.iSheet.IsheetTC2748" /> <!-- 65.791 minutes approximate -->
+			<class name="com.highq.test.iSheet.IsheetTC2747" /> <!-- 84.68683333 minutes approximate -->
+			<class name="com.highq.test.iSheet.IsheetTC2776" /> <!-- 105.4210333 minutes approximate -->
+		</classes>
+	</test>
+
+</suite>

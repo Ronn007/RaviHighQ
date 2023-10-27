@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Feature Suite 4.4</th></tr><tr><td><a href="#t0">File  Module Online Office </a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">225,332</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Feature Suite 4.4</th></tr></tbody><tbody id="t0"><tr><th colspan="4">File  Module Online Office  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.highq.test.siteAdmin.SiteAdmin_TC0041</td><td><a href="#m0">TC0041</a></td><td rowspan="1">1530872740165</td><td rowspan="1">218311</td></tr></tbody></table><h2>File  Module Online Office </h2><h3 id="m0">com.highq.test.siteAdmin.SiteAdmin_TC0041#TC0041</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[normalize-space(.)=&apos;,abc.admin@highq.com&apos;]//preceding::input[@id=&apos;chkUserID&apos;][1] (tried for 150 second(s) with 400 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.highq.base.TestBaseSetup.waitAndFindElement(TestBaseSetup.java:256)
+	at com.highq.base.TestBaseSetup.findVisibleElement(TestBaseSetup.java:644)
+	at com.highq.pageobjects.pages.BannerPageWeb.setSelection(BannerPageWeb.java:684)
+	at com.highq.pageobjects.pages.SearchUserPageWeb.resetUserId(SearchUserPageWeb.java:450)
+	at com.highq.pageobjects.pages.SearchUserPageWeb.selectAndResetUsers(SearchUserPageWeb.java:626)
+	at com.highq.pageobjects.pages.SearchUserPageWeb.setPassword(SearchUserPageWeb.java:577)
+	at com.highq.pagedata.PreConfiguration.createAndResetUsers(PreConfiguration.java:143)
+	at com.highq.pagedata.PreConfiguration.setConfiguration(PreConfiguration.java:396)
+	at com.highq.pagedata.PreConfiguration.setPreConfigurationDataFromJson(PreConfiguration.java:853)
+	at com.highq.test.siteAdmin.SiteAdmin_TC0041.scenaio6(SiteAdmin_TC0041.java:214)
+	at com.highq.test.siteAdmin.SiteAdmin_TC0041.TC0041(SiteAdmin_TC0041.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //td[normalize-space(.)=&apos;,abc.admin@highq.com&apos;]//preceding::input[@id=&apos;chkUserID&apos;][1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;HQI-194-RONAKYB&apos;, ip: &apos;192.168.157.77&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at org.openqa.selenium.support.ui.ExpectedConditions$$Lambda$324/1061448687.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 36 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

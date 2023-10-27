@@ -1,0 +1,69 @@
+{
+	"GlobalData": 
+	{
+		"sysAdminEmail": "auto@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		
+		"OrgData": 
+		{
+			"Organization 1": 
+			{
+				"name": "file.com", "Internal": true,"users": ["site.admin27", "content.admin27", "normal.user27"]
+			}
+		},
+		
+		"userResetData": 
+		{
+			"defaultPassword": "Password@12345rd",
+			"userResetPasswordData": 
+			{
+				"Organization 1": 
+				{
+					"name": "file.com",
+					"user 1": {"id": "site.admin27","newPassword": ""},
+					"user 2": { "id": "content.admin27", "newPassword": "" },
+					"user 3": { "id": "normal.user27", "newPassword": "" }
+				}
+			},
+			
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		
+		"PreConfiguration": 
+		{
+			"PreConfiguration 1": ["setOrg","addSystemAdminUsers","createSite","setGroupPermission","enableModules","addsiteuserswithoutroles","setSiteUserRoles"],
+			"Sites": { "name": "TC2704" },
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["site.admin27@file.com", "content.admin27@file.com", "normal.user27@file.com"],
+			"Users": {
+				       "user1": {            "id": "site.admin27@file.com",
+					        				 "Permissions": 
+					        				 {
+					        				 "Files": {},
+					        				 "Modules": {},
+						     				 "AdminGroups": {"site admin": true}
+					        				 }
+					            },
+					   "user2": {            "id": "content.admin27@file.com",
+					        				 "Permissions": 
+					        				 {
+					        				 "Files": {},
+					        				 "Modules": {},
+						     				 "AdminGroups": {"content admin": true}
+					        				 }
+					            },
+					   "user3": {            "id": "normal.user27@file.com",
+					                         "Permissions": 
+					        				 {
+					        				 "Files": {"Admin":true},
+					        				 "Modules": {"Files":  { "View": true}},
+						     				 "AdminGroups": {}
+					        				 }
+					        				 
+					            }                 
+				    }
+		}
+	}
+}

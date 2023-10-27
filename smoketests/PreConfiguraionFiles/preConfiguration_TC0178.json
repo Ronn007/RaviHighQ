@@ -1,0 +1,100 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "sitelevel0178.com",
+				"Internal": true,
+				"users": [
+					"normal.siteuser0161_0019",
+					"site.admin"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "sitelevel0178.com",
+					"user 1": {
+						"id": "normal.siteuser0161_0019",
+						"newPassword": "Password@123"
+					},
+					"user 2": {
+						"id": "site.admin",
+						"newPassword": "Password@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"addUsersInAdminGroups",
+				"createGroup",
+				"setModulePermissionOfGroup"
+			],
+			"Sites": {
+				"name": "Task_TC0178_json_02"
+			},
+			"SiteGroupPermission": true,
+			"modules": [
+				"all"
+			],
+			"siteUsers": [
+				"normal.siteuser0161_0019@sitelevel0178.com",
+				"site.admin@sitelevel0178.com"
+			],
+			"UserGroups": {
+				"group1": {
+					"name": "Group001",
+					"description": "task test case 0178",
+					"copyFolderAndFilePermissionFrom": "",
+					"members": "normal.siteuser0161_0019@sitelevel0178.com,site.admin@sitelevel0178.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							},
+							"Files": {
+								"View": true
+							},
+							"Wiki": {
+								"Edit": true,
+								"View": true
+							},
+							"Blog": {
+								"Edit": true,
+								"View": true
+							},
+							"Events": {
+								"Edit": true,
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+							}
+						}
+					}
+				}
+			},
+			"adminGroups": {
+				"Site admin": {
+					"members": "site.admin@sitelevel0178.com"
+				}
+			}
+		}
+	}
+}

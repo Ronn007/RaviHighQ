@@ -1,0 +1,71 @@
+{
+    "GlobalData": {
+        "sysAdminEmail": "auto.user@highq.com",
+        "sysAdminPassword": "Pa&&worD123",
+        "OrgData": {
+            "Organization 1": {
+                "name": "highq.com",
+                "Internal": true,
+                "users": ["system.admin", "site.admin"]
+            }
+        },
+        "userResetData": {
+            "defaultPassword": "Pa&&worD123",
+            "userResetPasswordData": {
+            "Organization 1": {
+                "name": "highq.com",
+                "user 1": {
+                    "id": "system.admin",
+                    "newPassword": ""
+                    },
+                "user 2": {
+                    "id": "site.admin",
+                    "newPassword": ""
+                    }
+                }
+            },
+            "userStatus": "Active",
+            "isStatusLocked": false
+        },
+
+        "PreConfiguration": {
+            "PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+            "Sites": {
+                "name": "AIMLTC2432"
+            },
+            "SiteGroupPermission": false,
+            "modules": ["all"],
+            "siteUsers": ["system.admin@highq.com","site.admin@highq.com"],
+            "Users": {
+                "user1": {
+                    "id": "system.admin@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                            
+                        },
+                        "Files": {
+                        },
+                        "AdminGroups": {
+                             "site admin": true
+                        }
+                    }
+                },
+                "user2": {
+                    "id": "site.admin@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                            
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+                            "site admin": true
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

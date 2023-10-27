@@ -1,0 +1,71 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": [
+					"rahul.dravid1",
+					"rahul.dravid2",
+					"rahul.dravid3"	
+				]
+			}
+		},
+
+		"userResetData": {
+			"defaultPassword": "Password@1234",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "highq.com",
+					"user 1": {
+						"id": "rahul.dravid1",
+						"newPassword": "Password@1234"
+					},
+					"user 2": {
+						"id": "rahul.dravid2",
+						"newPassword": "Password@1234"
+					},
+					"user 3": {
+						"id": "rahul.dravid3",
+						"newPassword": "Password@1234"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "SystemAdmin_TC2665"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["home", "files", "wiki", "tasks", "events"],
+			"siteUsers": ["above all"],
+			"Users": {
+				"user1": {
+					"id": "rahul.dravid1@highq.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

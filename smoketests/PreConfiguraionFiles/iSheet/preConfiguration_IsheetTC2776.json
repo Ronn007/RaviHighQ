@@ -1,0 +1,54 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "autouser.pnp@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "isheetdmd.com",
+				"Internal": true,
+				"users": ["site.admin"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "isheetdmd.com",
+				"user 1": {
+					"id": "site.admin",
+					"newPassword": ""
+				}
+			}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "IsheetTC2776"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["site.admin@isheetdmd.com"],
+			"Users": {
+				"user1": {
+					"id": "site.admin@isheetdmd.com",
+					"Permissions": {
+						"Modules": {
+
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

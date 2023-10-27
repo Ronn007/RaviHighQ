@@ -1,0 +1,62 @@
+{
+"DataVisualisation": {
+			"chartName":["Pie","Column","Bar","Line","Area"],
+			"chartType": ["Multi-series Column","Standard Pie","Stacked Column", "Standard Column"]
+		},
+	"GlobalData": {
+		"sysAdminEmail": "krishna.bhadani@highq.com",
+		"sysAdminPassword": "Admin@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["site.adminhome"]
+			}
+		},
+		
+		"userResetData": {
+			"defaultPassword": "Admin@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"user 1": {
+					"id": "site.adminhome@highq.com",
+					"newPassword": ""
+					}
+			}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "Home_TC1890"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["home", "files", "isheets"],
+			"siteUsers": ["site.adminhome@highq.com"],
+			"Users": {
+	
+				"user1": {
+					"id": "site.adminhome@highq.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

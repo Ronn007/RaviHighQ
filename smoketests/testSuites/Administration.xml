@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite 4.4">
+	<parameter name="appURL" value="https://autoind3.hqdev.highq.com/autoind3"/>
+	<parameter name="dbDomain" value="db8.prod.hqdev.india"/>
+	<parameter name="dbPort" value="1501"/>
+	<parameter name="dbUsername" value="sa"/>
+	<parameter name="dbPassword" value="Welcome123"/>
+	<parameter name="dbSaPassword" value="Welcome123"/>
+	<parameter name="dbName" value="autoind3"/>
+
+	<parameter name="browserType" value="chrome" />
+	
+	<listeners> 
+		<listener class-name="com.highq.listeners.ScreenshotListener"/>
+	</listeners>
+	 
+	<test name="System Admin Module">
+		<classes>
+			<class name="com.highq.test.systemAdmin.SystemAdmin_TC2665" />
+			<class name="com.highq.test.systemAdmin.SystemAdmin_TC2666" />
+			<class name="com.highq.test.systemAdmin.SystemAdmin_TC2733" />
+			<class name="com.highq.test.systemAdmin.SystemAdmin_TC2763" />
+			<class name="com.highq.test.systemAdmin.SystemAdmin_TC2764" />			
+		</classes>
+	</test> 
+	
+</suite>

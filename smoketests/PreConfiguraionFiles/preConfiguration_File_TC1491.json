@@ -1,0 +1,77 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "auto@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "file.com",
+				"Internal": true,
+				"users": ["normaluser1491", "siteadmin1491"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "file.com",
+					"user 1": {
+						"id": "normaluser1491",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "siteadmin1491",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "File_TC1491"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["All"],
+			"siteUsers": ["normaluser1491@file.com","siteadmin1491@file.com"],
+			"Users": {
+				"user1": {
+					"id": "normaluser1491@file.com",
+					"Permissions": {
+						"Modules": {
+						"Files": {
+								"View": true
+							
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+					}
+				},
+				"user2": {
+					"id": "siteadmin1491@file.com",
+					"Permissions": {
+						"Modules": {
+						
+							
+				
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+								"site admin": true
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

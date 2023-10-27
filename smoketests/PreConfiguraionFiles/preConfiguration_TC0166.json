@@ -1,0 +1,129 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "sitelevel0166.com",
+				"Internal": true,
+				"users": [
+					"normal.siteuser0161_0019",
+					"site.admin"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "sitelevel0166.com",
+					"user 1": {
+						"id": "normal.siteuser0161_0019",
+						"newPassword": "Password@123"
+					},
+					"user 2": {
+						"id": "site.admin",
+						"newPassword": "Password@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "Wiki_TC0166_json_03"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"home",
+				"files",
+				"wiki",
+				"tasks",
+				"q&a"
+			],
+			"siteUsers": [
+				"above all"
+			],
+			"Users": {
+				"user1": {
+					"id": "normal.siteuser0161_0019@sitelevel0166.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "site.admin@sitelevel0166.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			},
+			"Groups": {
+				"group1": {
+					"name": "group001",
+					"description": "testing group based case",
+					"copyFolderAndFilePermissionFrom": "",
+					"members": "normal.siteuser0161_0019@sitelevel0166.com,site.admin@sitelevel0166.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							},
+							"Files": {
+								"View": true
+							},
+							"Wiki": {
+								"Edit": true,
+								"View": true
+							},
+							"Blog": {
+								"Edit": true,
+								"View": true
+							},
+							"Events": {
+								"Edit": true,
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

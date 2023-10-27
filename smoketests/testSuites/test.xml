@@ -1,0 +1,124 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite 4.4">
+	<parameter name="appURL" value="https://autoind17.hqdev.highq.com/autoind17"/>
+	<parameter name="dbDomain" value="db12.prod.hqdev.india"/>
+	<parameter name="dbPort" value="1501"/>
+	<parameter name="dbUsername" value="sa"/>
+	<parameter name="dbPassword" value="Welcome123"/>
+	<parameter name="dbSaPassword" value="Welcome123"/>
+	<parameter name="dbName" value="autoind17"/>
+
+	<parameter name="browserType" value="chrome" />
+	
+	<listeners> 
+		<listener class-name="com.highq.listeners.ScreenshotListener"/>
+	</listeners>
+	 
+	<test name="Wiki Module">
+		<classes>
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0165" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0166" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0167" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0168" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0169" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0170" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0171" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0172" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0174" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0175" /> -->
+<!-- 			<class name="com.highq.test.wiki.Wiki_TC0176" /> -->
+		</classes>
+	</test> 
+<!-- 	 <test name="QandA Module"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0188" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0189" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0190" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0192" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0193" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0194" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0196" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0197" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0199" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0200" /> -->
+<!-- 			<class name="com.highq.test.qanda.QandA_TC0206" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	<test name="Dashboard Module">
+ 		<classes>
+<!--  			<class name="com.highq.test.dashboard.Dashboard_TCR0207" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0209" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0210" /> -->
+			<class name="com.highq.test.dashboard.Dashboard_TCR0211" />
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0213" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0223" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0221" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0230" /> -->
+<!-- 			<class name="com.highq.test.dashboard.Dashboard_TCR0241" /> -->
+			
+		</classes> 
+	</test> 
+	
+<!-- 	<test name="People Module"> -->
+<!--  		<classes> -->
+<!--  			<class name="com.highq.test.people.People_TCR0251" /> -->
+<!-- 			<class name="com.highq.test.people.People_TCR0252" /> -->
+<!-- 			<class name="com.highq.test.people.People_TCR0253" /> -->
+<!-- 			<class name="com.highq.test.people.People_TCR0254" /> -->
+<!-- 			<class name="com.highq.test.people.People_TCR0255" /> -->
+<!-- 			<class name="com.highq.test.people.People_TCR0256" /> -->
+<!-- 		</classes>  -->
+<!-- 	</test> -->
+	
+<!-- 	<test name="File Module"> -->
+<!-- 		<classes>  -->
+<!-- 			<class name="com.highq.test.file.File_TCR0222" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0224" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0226" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0227" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0228" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0235" /> -->
+<!-- 			<class name="com.highq.test.file.File_TCR0239" />  -->
+<!-- 			<class name="com.highq.test.file.File_TCR0204" /> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+<!-- 	<test name="Blog Module"> -->
+<!-- 		<classes>  -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0179" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0180" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0181" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0182" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0183" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0184" /> -->
+<!-- 			<class name="com.highq.test.blog.Blog_TC0185" /> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+<!-- 	<test name="Tasks Module"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.highq.test.tasks.Task_TC0161" /> -->
+<!-- 			<class name="com.highq.test.tasks.Task_TC0162" /> -->
+<!-- 			<class name="com.highq.test.tasks.Task_TC0163" /> -->
+<!-- 			<class name="com.highq.test.tasks.Task_TC0173" /> -->
+<!-- 			<class name="com.highq.test.tasks.Task_TC0177" /> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+<!-- 	<test name="Events Module"> -->
+<!-- 		<classes> -->
+<!-- 			 <class name="com.highq.test.events.Event_TC0148" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0149" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0150" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0152" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0153" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0154" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0155" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0157" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0158" /> -->
+<!-- 			<class name="com.highq.test.events.Event_TC0160" /> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Feature Suite 4.4]">
+  <parameter name="dbPort" value="1501"/>
+  <parameter name="dbDomain" value="db8.prod.hqdev.india"/>
+  <parameter name="dbUsername" value="sa"/>
+  <parameter name="dbSaPassword" value="Welcome123"/>
+  <parameter name="dbName" value="autoind7"/>
+  <parameter name="appURL" value="https://autoind7.hqdev.highq.com/autoind7"/>
+  <parameter name="dbPassword" value="Welcome123"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.highq.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="File  Module Online Office (failed)">
+    <classes>
+      <class name="com.highq.test.wiki.Wiki_TC0165">
+        <methods>
+          <include name="wikiTC0165"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="initializeDBParameter"/>
+          <include name="tearDown"/>
+          <include name="backupTestOutput"/>
+        </methods>
+      </class> <!-- com.highq.test.wiki.Wiki_TC0165 -->
+    </classes>
+  </test> <!-- File  Module Online Office (failed) -->
+</suite> <!-- Failed suite [Feature Suite 4.4] -->

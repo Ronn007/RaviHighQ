@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="264" started-at="2018-07-05T11:23:33Z" finished-at="2018-07-05T11:23:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="264" started-at="2018-07-05T11:23:33Z" finished-at="2018-07-05T11:23:33Z">
+      <class name="com.highq.test.siteAdmin.SiteAdmin_TC0041">
+        <test-method status="PASS" signature="backupTestOutput()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="backupTestOutput" is-config="true" duration-ms="161" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backupTestOutput -->
+        <test-method status="FAIL" signature="initializeDBParameter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="initializeDBParameter" is-config="true" duration-ms="0" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'dbDomain' is required by BeforeClass on method initializeDBParameter but has not been marked @Optional or defined
+in C:\Users\ronak.bhatt.HQDEV\AppData\Local\Temp\testng-eclipse-1825148676\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'dbDomain' is required by BeforeClass on method initializeDBParameter but has not been marked @Optional or defined
+in C:\Users\ronak.bhatt.HQDEV\AppData\Local\Temp\testng-eclipse-1825148676\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDBParameter -->
+        <test-method status="SKIP" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="initializeTestBaseSetup" is-config="true" duration-ms="0" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="setUp" is-config="true" duration-ms="0" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="TC0041()[pri:1, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="TC0041" duration-ms="85" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'dbDomain' is required by BeforeClass on method initializeDBParameter but has not been marked @Optional or defined
+in C:\Users\ronak.bhatt.HQDEV\AppData\Local\Temp\testng-eclipse-1825148676\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'dbDomain' is required by BeforeClass on method initializeDBParameter but has not been marked @Optional or defined
+in C:\Users\ronak.bhatt.HQDEV\AppData\Local\Temp\testng-eclipse-1825148676\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC0041 -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@56928307]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-05T16:53:33Z" finished-at="2018-07-05T16:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.highq.test.siteAdmin.SiteAdmin_TC0041 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

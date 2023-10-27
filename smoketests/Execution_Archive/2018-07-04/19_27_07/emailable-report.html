@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Feature Suite 4.4</th></tr><tr><td><a href="#t0">File  Module Online Office </a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">107,176</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Feature Suite 4.4</th></tr></tbody><tbody id="t0"><tr><th colspan="4">File  Module Online Office  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.highq.test.siteAdmin.SiteAdmin_TC0041</td><td><a href="#m0">TC0041</a></td><td rowspan="1">1530712237331</td><td rowspan="1">100554</td></tr></tbody></table><h2>File  Module Online Office </h2><h3 id="m0">com.highq.test.siteAdmin.SiteAdmin_TC0041#TC0041</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:882)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:104)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:71)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at com.highq.base.TestBaseSetup.areSpinnersLoaded(TestBaseSetup.java:469)
+	at com.highq.base.TestBaseSetup.waitAndFindElement(TestBaseSetup.java:222)
+	at com.highq.base.TestBaseSetup.findVisibleElement(TestBaseSetup.java:644)
+	at com.highq.pageobjects.pages.BannerPageWeb.clickOnUserAvtar(BannerPageWeb.java:582)
+	at com.highq.pageobjects.pages.BannerPageWeb.gotoSystemAdmin(BannerPageWeb.java:566)
+	at com.highq.pagedata.PreConfiguration.setOrganisation(PreConfiguration.java:94)
+	at com.highq.pagedata.PreConfiguration.setConfiguration(PreConfiguration.java:387)
+	at com.highq.pagedata.PreConfiguration.setPreConfigurationDataFromJson(PreConfiguration.java:853)
+	at com.highq.test.siteAdmin.SiteAdmin_TC0041.scenario3(SiteAdmin_TC0041.java:136)
+	at com.highq.test.siteAdmin.SiteAdmin_TC0041.TC0041(SiteAdmin_TC0041.java:67)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

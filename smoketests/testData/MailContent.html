@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<base href="https://collabscrum14.hqdev.highq.com/collabscrum14/" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+
+		<style type="text/css">
+			body {
+				background-color: #fcfcfc;
+				font-family: Arial, Helvetica, sans-serif;
+				margin: 0;
+				padding: 0;
+				word-wrap: break-word;
+			}
+			.ReadMsgBody .ExternalClass{ /* For Hotmail */
+				display: block !important;
+			}
+			.container {
+				margin-top: 6px;
+				margin-bottom: 6px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 8px;
+				background-color: #FFF;
+				border: 1px solid #cac8c9;
+				width: 600px;
+			}
+			h1 {
+				font-size: 22px;
+				color: #FFFFFF;
+				font-weight: normal;
+				margin: 0 0 12px 0;
+			}
+			h2 {
+				font-size: 18px;
+				color: #444545;
+				font-weight: bold;
+				margin: 0px 0px 6px 0px;
+			}
+			.titleLink {
+				color: #444545 !important;
+				text-decoration:none;
+			}
+			.firstLine {
+				font-size: 12px;
+				line-height: 18px;
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				font-size: 12px;
+				line-height: 18px;
+				margin: 0 0 12px 0;
+				padding: 0;
+			}
+			a:link, a:active, a:visited {
+				color: #009cde;
+				text-decoration: none !important;
+			}
+			a:hover {
+				text-decoration: underline !important;
+			}
+			.clearSpace {
+				height: 1px;
+				padding: 6px 0;
+				clear: both;
+			}
+			.logo {
+				margin: 12px 0;
+			}
+			.ReadMsgBody {
+				width: 100%;
+			}
+			.ExternalClass {
+				width: 100%;
+			}
+			.middleCol {
+				width: 600px;
+			}
+			.sep {
+				padding-top: 12px;
+				padding-bottom: 0;
+				border-top: 1px solid #cac8c9;
+			}
+			
+			/********* STARTS For applying styles to the ckEditor content only ********/
+			.ckContentArea
+			{
+				/* Font */
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				/* Text color */
+				color: #222;
+				/* Remove the background color to make it transparent */
+				background-color: #fff;
+			}
+			
+			.ckContentArea img:-moz-broken
+			{
+				-moz-force-broken-image-icon: 1;
+				width: 24px;
+				height: 24px;
+			}
+			
+			.ckContentArea input, .ckContentArea textarea
+			{
+				cursor: default;
+			}
+			
+			.ckContentArea p,.ckContentArea div, li.cke_panel_listItem p,
+			.ckContentArea ul li, .ckContentArea ol li, span.ckContentArea  {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				line-height: 1.5;
+				font-weight: normal;
+				color: #444545;
+			}
+			
+			.ckContentArea H1,LI.cke_panel_listItem H1 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				font-weight: normal;
+				margin:1.3em 0 1em;
+				color: #FFFFFF;
+			}
+			
+			.ckContentArea H2,LI.cke_panel_listItem H2 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 18px;
+				font-weight: normal;
+				margin:1.3em 0 1em;
+				color: #FFFFFF;
+			}
+			
+			.ckContentArea H3,LI.cke_panel_listItem H3 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				font-weight: normal;
+				margin:1.3em 0 1em;
+				color: #FFFFFF;
+			}
+			
+			.ckContentArea H4,LI.cke_panel_listItem H4 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				font-weight: normal;
+				margin:1.3em 0 1em;
+				color: #FFFFFF;
+			}
+			
+			.ckContentArea H5,LI.cke_panel_listItem H5 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: bold;
+				color: #444545;
+				margin:1.3em 0 1em;
+			}
+			
+			.ckContentArea H6,LI.cke_panel_listItem H6 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: normal;
+				font-style:italic;
+				color: #444545;
+				margin:1.3em 0 1em;
+			}
+			
+			.ckContentArea blockquote {
+				border-left: 4px solid #e8e8e8;
+				padding-left: 8px;
+			}
+			
+			LI.cke_panel_listItem A:hover {
+				text-decoration: none;
+			}
+			
+			.ckContentArea table {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				line-height: 1.5;
+				font-weight: normal;
+				color: #444545;
+				border-right-style: none;
+				border-bottom-style: none;
+				border-color: #cac8c9;
+			}
+			
+			.ckContentArea table td {
+				border-color: #cac8c9;
+				border-top-style: none;
+				border-left-style: none;
+			}
+			
+			.ckContentArea table th {
+				background-color: #f8f9fb;
+				border-color: #cac8c9;
+				border-top-style: none;
+				border-left-style: none;
+			}
+			
+			.ckContentArea table caption {
+				text-align: left;
+			}
+			
+			.ckEditContentArea p {
+				margin-top: 0px;
+			}
+			
+			.cke_skin_kama .cke_dialog_title
+			{
+				color:#FFFFFF !important;
+			}
+			
+			/* START-ckEditor List(Macro) edit problem solution for FF, IE, CHROME */
+			.ckEditContentArea span.CKLinkDIV {
+				/*width: 97%;*/
+				display: block;
+				border: 1px dashed #e6e0a2;
+				background-color:#f7f5c5;
+				padding: 5px;
+			}
+						
+			/* END-ckEditor List(Macro) edit problem solution for FF, IE, CHROME */
+		</style>
+	</head>
+	<body style="font-family: Arial, Helvetica, sans-serif; background-color: #fcfcfc;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #fcfcfc;">
+			<tr>
+				<td>&nbsp;</td>
+				<td class="middleCol" style="width: 600px;">
+					<table border="0" cellspacing="0" cellpadding="0" style="margin-left: 8px; margin-right: 8px; margin-bottom: 8px; max-width: 600px;">
+													<tr>
+								<td>
+																			<img src="https://collabscrum14.hqdev.highq.com/collabscrum14/flag/flag_mailLogo.gif?t=1531131167182" class="logo" style="margin-top: 12px; margin-bottom: 12px; margin-left: 11px;"/>
+																	</td>
+							</tr>
+												<tr>
+							<td class="container" style="padding: 8px; border: 1px solid #e3e3e3; background-color: #ffffff;">	<p class="firstLine" style="font-family: Arial, Helvetica, sans-serif; color:black;">
+		Ronn,<br /><br /> 
+		<span style="color:#a5a5a5;">
+			You have been invited to the <strong><a href="https://collabscrum14.hqdev.highq.com/collabscrum14/sitecontroller.action?metaData.siteID=2928" style="font-weight: bold; color: #009cde; text-decoration:none !important;">SiteAdmincase</a></strong> site
+							by <strong><a href="https://collabscrum14.hqdev.highq.com/collabscrum14/viewUserProfile.action?metaData.encryptTargetUserID=sXkJ6G_pleI=&metaData.updateUserProfileProcess=true" style="font-weight: bold; color: #009cde; text-decoration:none !important;">Ronak Bhatt</a></strong> from <strong>HighQ</strong>.
+					</span><br /><br />
+									<A href="https://collabscrum14.hqdev.highq.com/collabscrum14/ConformUser_input.action?conformUser.passwordResetKey=BlrT_Kvb7z4HIHPYDUvOAUvRaaIJN8LLMx4VJgodjF8yf79I9LlX_gXus2SgVfBeybj2WXM2vLw=" style="font-size:12px; font-family:arial; font-weight: bold;color: #009cde;text-decoration: none !important;">Please click here to activate your account.</A>
+						<br />
+	</p>
+<br/>
+<p class="firstLine" style="font-family: Arial, Helvetica, sans-serif;">
+	THE ABOVE LINKS CONTAIN SENSITIVE DETAILS THAT ARE SPECIFIC TO YOUR USER ACCOUNT. PLEASE DO NOT FORWARD THIS EMAIL TO ANYONE ELSE.
+</p>
+<br/>
+<p style="font-family: Arial, Helvetica, sans-serif;">
+	For technical and user support please email the
+	<a href='mailto:ronn@highq.com' style="color: #009cde; text-decoration:none !important;">Administrator.</a>
+</p>
+<p style="font-family: Arial, Helvetica, sans-serif;">
+	Kind regards,
+</p>
+<p style="font-family: Arial, Helvetica, sans-serif;">
+	Collabscrum14
+</p>
+
+								<table style="margin: 0; width: 100%;">
+									<tr>
+										<td class="sep" style="padding-top: 12px; padding-bottom: 0px; border-top: solid 1px #cac8c9; font-size:1px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="padding-top: 10px; padding-bottom: 5px; text-align:center;">
+											<a href="http://highq.com/" target="_blank"><img alt="HighQ" title="HighQ" src="./images/v3/emailFooterLogo.png" /></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="font-size: 11px; padding-bottom: 15px; text-align:center;">
+											<a href="http://www.highq.com/">&copy; 2018 HighQ Solutions Ltd</a> | <A style="color: #009cde; text-decoration: none !important;" href="https://collabscrum14.hqdev.highq.com/collabscrum14/termsOfUse.action">Terms of use</A> | 
+																									<a style="color: #009cde; text-decoration: none !important;" href="https://collabscrum14.hqdev.highq.com/collabscrum14/userAlerterOptions.action">Manage email preferences</a>
+																						</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>

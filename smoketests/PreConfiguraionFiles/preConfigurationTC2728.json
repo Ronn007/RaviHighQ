@@ -1,0 +1,134 @@
+{
+"GlobalData": {
+		"sysAdminEmail": "autouser.pnp@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "task2728.com",
+				"Internal": true,
+				"users": ["normal1.user", "normal2.user","normal3.user","normal4.user","normal5.user"]
+			},
+			"Organization 2": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["autouser.pnp"]
+			}
+			
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "task2728.com",
+				"user 1": {
+					"id": "normal1.user",
+					"newPassword": "Pa&&worD123"
+					
+					},
+				"user 2": {
+					"id": "normal2.user",
+					"newPassword": "Pa&&worD123"
+					},
+				"user 3": {
+					"id": "normal3.user",
+					"newPassword": "Pa&&worD123"
+					},
+				"user 4": {
+					"id": "normal4.user",
+					"newPassword": "Pa&&worD123"
+					},
+				"user 5": {
+					"id": "normal5.user",
+					"newPassword": "Pa&&worD123"
+					}
+				},
+				"Organization 2": {
+				"name": "highq.com",
+				"user 1": {
+					"id": "autouser.pnp",
+					"newPassword": "Pa&&worD123"
+					
+					}
+				}
+				
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg","addSystemAdminUsers","createSite","setGroupPermission","enableModules",
+					"addsiteuserswithoutroles","addUsersInAdminGroups","createGroup","setModulePermissionOfGroup"],
+			"Sites": {
+				"name": "TaskTC2728"
+			},
+			"SiteGroupPermission": true,
+			"modules": ["files","tasks","people"],
+			"siteUsers": ["normal1.user@task2728.com", "normal2.user@task2728.com","normal3.user@task2728.com","normal4.user@task2728.com","normal5.user@task2728.com","autouser.pnp@highq.com"],
+			"UserGroups": {
+				"group1": {
+					"name": "General",
+					"description": "task test case 2728",
+					"copyFolderAndFilePermissionFrom" : "",
+					"members": "normal1.user@task2728.com,normal2.user@task2728.com,normal3.user@task2728.com",
+					"Permissions": {
+						"Modules": {
+							
+							"Files": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+									}
+									}
+									}
+							},
+							
+					"group2": {
+					"name": "Group 2",
+					"description": "task test case 2728",
+					"copyFolderAndFilePermissionFrom" : "",
+					"members": "normal4.user@task2728.com",
+					"Permissions": {
+						"Modules": {
+							
+							"Files": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+									}
+									}
+									}
+							},
+					"group3": {
+					"name": "Group 3",
+					"description": "task test case 2728",
+					"copyFolderAndFilePermissionFrom" : "",
+					"members": "normal5.user@task2728.com",
+					"Permissions": {
+						"Modules": {
+							
+							"Files": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+									}
+									}
+									}
+							}
+							
+							},
+							"adminGroups" : {
+					"Site admin" :{
+						"members": ""
+					}
+				}
+							
+				}
+			}
+		
+}

@@ -1,0 +1,88 @@
+{
+    "GlobalData": {
+        "sysAdminEmail": "ravi.middha@highq.com",
+        "sysAdminPassword": "Password@123",
+        "OrgData": {
+            "Organization 1": {
+                "name": "file.com",
+                "Internal": true,
+                "users": [
+                    "usernormal1",
+                    "usersiteadmin"
+                ]
+            }
+        },
+        "userResetData": {
+            "defaultPassword": "Password@123",
+            "userResetPasswordData": {
+                "Organization 1": {
+                    "name": "file.com",
+                    "user 1": {
+                        "id": "usernormal1",
+                        "newPassword": ""
+                    },
+                    "user 2": {
+                        "id": "usersiteadmin",
+                        "newPassword": ""
+                    }
+                }
+            },
+            "userStatus": "Active",
+            "isStatusLocked": false
+        },
+        "PreConfiguration": {
+            "PreConfiguration 1": [
+                "setOrg",
+                "addSystemAdminUsers",
+                "createSite",
+                "setGroupPermission",
+                "enableModules",
+                "addsiteuserswithoutroles",
+                "setSiteUserRoles"
+            ],
+            "Sites": {
+                "name": "File_TCR0229"
+            },
+            "SiteGroupPermission": false,
+            "modules": [
+                "all"
+            ],
+            "siteUsers": [
+                "usernormal1@file.com",
+                "usersiteadmin@file.com"
+            ],
+            "Users": {
+                "user1": {
+                    "id": "usernormal1@file.com",
+                    "Permissions": {
+                        "Modules": {
+                            "Files": {
+                                "View": true
+                            }
+                        },
+                        "Files": {
+                            "Admin": true
+                        },
+                        "AdminGroups": {
+                            
+                        }
+                    }
+                },
+                "user2": {
+                    "id": "usersiteadmin@file.com",
+                    "Permissions": {
+                        "Modules": {
+                            
+                        },
+                        "Files": {
+                            
+                        },
+                        "AdminGroups": {
+                            "site admin": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

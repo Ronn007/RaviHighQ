@@ -1,0 +1,100 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "l5.com",
+				"Internal": true,
+				"users": ["alpha.user1240", "beta.user1240", "site.admin1240"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "l5.com",
+				"user 1": {
+					"id": "alpha.user1240",
+					"newPassword": "Password@normal1"
+					},
+				"user 2": {
+					"id": "beta.user1240",
+					"newPassword": "Password@normal2"
+					},	
+				"user 3": {
+					"id": "site.admin1240",
+					"newPassword": "Password@siteadmin1"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "File_TCR0240"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["alpha.user1240@l5.com","beta.user1240@l5.com","site.admin1240@l5.com"],
+			"Users": {
+				"user1": {
+					"id": "alpha.user1240@l5.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user2": {
+					"id": "beta.user1240@l5.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user3": {
+					"id": "site.admin1240@l5.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "tom.chick@Highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["site.onlineOffice", "contain.onlineOffice","normal.onlineOffice"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"user 1": {
+					"id": "site.onlineOffice",
+					"newPassword": "Password@123"
+					},
+				
+				"user 2": {
+					"id": "contain.onlineOffice",
+					"newPassword": "Password@123"
+					},
+					"user 3": {
+					"id": "normal.onlineOffice",
+					"newPassword": "Password@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+		
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "File_TC2754"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["site.onlineOffice@highq.com", "contain.onlineOffice@highq.com","normal.onlineOffice@highq.com"],
+			"Users": {
+				"user1": {
+					"id": "site.onlineOffice@highq.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+	"site admin": true
+						}
+
+					}
+				},
+				
+				"user3": {
+					"id": "normal.onlineOffice@highq.com",
+					"Permissions": {
+						"Modules": {"Files":
+						 {
+								"View": true
+							}
+						
+							
+						},
+						"Files": {
+						"View":true,
+						"Admin":true
+
+						},
+						"AdminGroups": {
+						}
+
+					}
+				},
+				"user2": {
+					"id": "contain.onlineOffice@highq.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"Content admin": true
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DAV Suite 4.4">
+	<parameter name="appURL" value="https://autoind4.hqdev.highq.com/autoind4"/>
+	<parameter name="dbDomain" value="db8.prod.hqdev.india"/>
+	<parameter name="dbPort" value="1501"/>
+	<parameter name="dbUsername" value="sa"/>
+	<parameter name="dbPassword" value="Welcome123"/>
+	<parameter name="dbSaPassword" value="Welcome123"/>
+	<parameter name="dbName" value="autoind4"/>
+	<parameter name="browserType" value="chrome" />
+
+	<listeners>
+        <listener class-name="com.highq.listeners.ScreenshotListener"/>
+	</listeners>
+
+	<test name="Home Module">
+	<classes>
+		<class name="com.highq.test.home.HomeTC2429" />
+		<class name="com.highq.test.home.HomeTC1920Part2" />
+		<class name="com.highq.test.home.HomeTC2705" />
+		<class name="com.highq.test.home.HomeTC2706" />
+		<class name="com.highq.test.home.HomeTC1890" />
+		<class name="com.highq.test.home.HomeTC1969" />
+		<class name="com.highq.test.home.HomeTC2007Part2" />
+		<class name="com.highq.test.home.HomeTC2912" />
+		<class name="com.highq.test.home.HomeTC2706_part2" />
+    </classes>
+    </test> 
+
+	<test name="aiml Module">
+	<classes>
+		<class name="com.highq.test.aiml.AIMLTC2432" />
+		<class name="com.highq.test.aiml.AIMLTC2717" />
+		<class name="com.highq.test.aiml.AIMLTC2718" />
+	</classes>
+	</test> 
+
+</suite>   

@@ -1,0 +1,88 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "isheet0144.com",
+				"Internal": true,
+				"users": [
+					"normal.user144",
+					"site.admin144"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "isheet0144.com",
+					"user 1": {
+						"id": "normal.user144",
+						"newPassword": "Password@123"
+					},
+					"user 2": {
+						"id": "site.admin144",
+						"newPassword": "Password@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "Isheet_TCR0144_2"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"All"
+			],
+			"siteUsers": [
+				"above all"
+			],
+			"Users": {
+				"user1": {
+					"id": "normal.user144@isheet0144.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "site.admin144@isheet0144.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,107 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ronakbhatt@highq.com",
+		"sysAdminPassword": "Admin@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["site.admin", "contain.admin","abc.admin"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Admin@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"user 1": {
+					"id": "site.admin",
+					"newPassword": "Admin@123"
+					},
+				
+				"user 2": {
+					"id": "contain.admin",
+					"newPassword": "Admin@123"
+					},
+					
+					"user 3": {
+					"id": "abc.admin",
+					"newPassword": "Admin@123"
+					}
+					
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+		
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "SiteAdmincase"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["site.admin@highq.com", "contain.admin@highq.com","abc.admin@highq.com"],
+			"Users": {
+				"user1": {
+					"id": "site.admin@highq.com",
+				"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+								"site admin": true
+						}
+					}
+				},
+				
+				"user3": {
+					"id": "abc.admin@highq.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+										"site admin": true
+						}
+
+					}
+				},
+				
+				"user2": {
+					"id": "contain.admin@highq.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"Content admin": true
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+}

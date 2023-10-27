@@ -1,0 +1,152 @@
+{
+"DataVisualisation": {
+			"chartName":["Pie","Column","Bar","Line","Area"],
+			"chartType": ["Multi-series Column","Standard Pie","Stacked Column", "Standard Column"]
+		},
+	"GlobalData": {
+		"sysAdminEmail": "auto.user@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["site.admintc2007","content.admintc2007","member.admintc2007","reporting.admintc2007","qa.admintc2007","normal.usertc2007"]
+			}
+		},
+		
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"user 1": {
+    					"id": "site.admintc2007",
+    					"newPassword": ""
+					},
+    			"user 2": {
+                        "id": "content.admintc2007",
+                        "newPassword": ""
+                },
+                "user 3": {
+                        "id": "member.admintc2007",
+                        "newPassword": ""
+                },
+                "user 4": {
+                        "id": "reporting.admintc2007",
+                        "newPassword": ""
+                },
+                "user 5": {
+                        "id": "qa.admintc2007",
+                        "newPassword": ""
+                },
+                 "user 6": {
+                        "id": "normal.usertc2007",
+                        "newPassword": ""
+                        }
+                     }
+                },
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "Home_TC2007_Part2"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["home", "files", "q&a","isheets"],
+			"siteUsers": ["site.admintc2007@highq.com", "content.admintc2007@highq.com","member.admintc2007@highq.com","reporting.admintc2007@highq.com","qa.admintc2007@highq.com","normal.usertc2007@highq.com"],
+			"Users": {
+	
+				"user1": {
+					"id": "site.admintc2007@highq.com",
+					"Permissions": {
+						"Modules": {
+						},
+						"Files": {
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}, "user2": {
+                    "id": "content.admintc2007@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+                            "content admin": true
+                        }
+
+                    }
+                },"user3": {
+                    "id": "member.admintc2007@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                             "Home": {
+                                "View": true
+                            }
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+                            "member admin": true
+                        }
+                    }
+                },
+                "user4": {
+                    "id": "reporting.admintc2007@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                            "Home": {
+                                "View": true
+                            }
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+                            "reporting admin": true
+                        }
+                    }
+                },
+                "user5": {
+                    "id": "qa.admintc2007@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                            "Home": {
+                                "View": true
+                            }
+                        },
+                        "Files": {
+
+                        },
+                        "AdminGroups": {
+                            "q&a admin": true
+                        }
+                    }
+                },
+                "user6": {
+                    "id": "normal.usertc2007@highq.com",
+                    "Permissions": {
+                        "Modules": {
+                           "Home": {
+                                "View": true
+                            }
+                        },
+                        "Files": {
+                        },
+                        "AdminGroups": {
+                            
+                        }
+                    }
+                }
+			}
+		}
+	}
+}

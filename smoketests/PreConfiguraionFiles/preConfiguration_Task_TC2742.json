@@ -1,0 +1,139 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "autouser.pnp@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "task2742.com",
+				"Internal": true,
+				"users": [
+					"site.admin",
+					"normal.user"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "task2742.com",
+					"user 1": {
+						"id": "site.admin",
+						"newPassword": "Pa&&worD123"
+					},
+					"user2": {
+						"id": "normal.user",
+						"newPassword": "Pa&&worD123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"addUsersInAdminGroups",
+				"createGroup",
+				"setModulePermissionOfGroup"
+			],
+			"Sites": {
+				"name": "TaskTC2742"
+			},
+			"SiteGroupPermission": true,
+			"modules": [
+				"all"
+			],
+			"siteUsers": [
+				"site.admin@task2742.com",
+				"autouser.pnp@highq.com",
+				"normal.user@task2742.com"
+			],
+						"UserGroups": {
+				"group1": {
+					"name": "group001",
+					"description": "testing group based case",
+					"copyFolderAndFilePermissionFrom": "",
+					"members": "autouser.pnp@highq.com,site.admin@task2742.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							},
+							"Files": {
+								"View": true,
+								"Edit": true
+							},
+							"Wiki": {
+								"Edit": true,
+								"View": true
+							},
+							"Blog": {
+								"Edit": true,
+								"View": true
+							},
+							"Events": {
+								"Edit": true,
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+							}
+						}
+					}
+				},
+				"group2": {
+					"name": "group002",
+					"description": "testing group based case",
+					"copyFolderAndFilePermissionFrom": "",
+					"members": "normal.user@task2742.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							},
+							"Files": {
+								"View": true,
+								"Edit": true
+							},
+							"Wiki": {
+								"Edit": true,
+								"View": true
+							},
+							"Blog": {
+								"Edit": true,
+								"View": true
+							},
+							"Events": {
+								"Edit": true,
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+							}
+						}
+					}
+				}
+				
+			},
+			"adminGroups": {
+				"Site admin": {
+					"members": "site.admin@task2742.com"
+				}
+			}
+		}
+	}
+}

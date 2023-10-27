@@ -1,0 +1,94 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "l5.com",
+				"Internal": true,
+				"users": [
+					"usernormalforsmokefileupdated",
+					"usersiteadminforsmokefileupdated"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "l5.com",
+					"user 1": {
+						"id": "usernormalforsmokefileupdated",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "usersiteadminforsmokefileupdated",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "File_TCR0217"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"home",
+				"files",
+				"wiki",
+				"isheets"
+			],
+			"siteUsers": [
+				"usernormalforsmokefileupdated@l5.com",
+				"usersiteadminforsmokefileupdated@l5.com"
+			],
+			"Users": {
+				"user1": {
+					"id": "usernormalforsmokefileupdated@l5.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "usersiteadminforsmokefileupdated@l5.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

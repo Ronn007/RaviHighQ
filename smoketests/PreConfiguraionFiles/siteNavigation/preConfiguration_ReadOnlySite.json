@@ -1,0 +1,78 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "auto@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": ["site.admin", "normal.user"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"user 1": {
+					"id": "site.admin",
+					"newPassword": ""
+					},  
+				"user 2": {
+					"id": "normal.user",
+					"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "Site_For_TC0886_Readonly", 
+				"Matter number":"1412" 
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["site.admin@highq.com","normal.user@highq.com"],
+			"Users": {
+				"user1": {
+					"id": "normal.user@highq.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+					}
+				},
+				"user2": {
+					"id": "site.admin@highq.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}

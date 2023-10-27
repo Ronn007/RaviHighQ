@@ -1,0 +1,31 @@
+What Is Automation?
+The dictionary defines automation as “the technique of making an apparatus, a process, or a system operate automatically.”
+
+We define automation as "the creation and application of technology to monitor and control the production and delivery of products and services.”
+
+Using our definition, the automation profession includes “everyone involved in the creation and application of technology to monitor and control the production and delivery of products and services”; and the automation professional is “any individual involved in the creation and application of technology to monitor and control the production and delivery of products and services.”
+
+Automation encompasses many vital elements, systems, and job functions.
+Automation provides benefits to virtually all of industry. Here are some examples:
+
+ Manufacturing, including food and pharmaceutical, chemical and petroleum, pulp and paper
+ Transportation, including automotive, aerospace, and rail
+ Utilities, including water and wastewater, oil and gas, electric power, and telecommunications
+ Defense
+ Facility operations, including security, environmental control, energy management, safety, and other building automation
+And many others
+
+Automation crosses all functions within industry from installation, integration, and maintenance to design, procurement, and management. Automation even reaches into the marketing and sales functions of these industries.
+
+Automation involves a very broad range of technologies including robotics and expert systems, telemetry and communications, electro-optics, Cybersecurity, process measurement and control, sensors, wireless applications, systems integration, test measurement, and many, many more.
+
+Why is the automation professional so important?
+Think about the cell phone and computer you use every day to do your job. Think about the car you drive to take to work. Think about the food you eat; water you drink; clothes you wear; and appliances you use to store, prepare, and clean them. Think about the television you watch, video games you play, or music system you listen to. Think about the buildings you visit. Think about any modern convenience or necessity. Just about anything you can think of is the result of complex processes. Without talented individuals to design, build, improve, and maintain these processes, these technological advances would never have occurred and future innovations would be impossible. Without automation professionals, our world and our future would be very different.
+
+Automation professionals are responsible for solving complex problems in many vital aspects of industry and its processes. The work of automation professionals is critically important to the preservation of the health, safety, and welfare of the public and to the sustainability and enhancement of our quality of life.
+
+The U.S. government, among many others, recognizes the unsung value of automation professionals. Support for the importance of automation to industry comes from the United States Senate Committee on Appropriations. On 30 June 2009, the committee submitted report language (including the excerpt shown below) to accompany the bill: H. R. 2847 (Commerce, Justice, Science and Related Agencies Appropriations Act, 2010) emphasizing the importance of automation to industry:
+
+“Supporting the Nation's manufacturers, especially small businesses, is critical to keeping America innovative in a global marketplace…MEP, NIST, and its partners are directed to consider the importance automation plays in accelerating and integrating manufacturing processes. The topic of automation cuts across all levels of industry, rather than serving as a stand-alone technology, and particularly affects the fields of control systems cyber security, industrial wireless sensors, systems interoperability, and other basic automation technologies necessary for the success of industrial enterprises. NIST is encouraged to consult and collaborate with independent experts in the field of automation to support the agency's efforts in working with industry to increase innovation, trade, security, and jobs."
+
+Automation professionals do and will continue to play a crucial role in protecting us from cyber-attack; enhancing our quality of life; and ensuring the reliability, efficiency, safety, constant improvement, and competitiveness of our electric power systems, transportation systems, manufacturing operations, and industry as a whole. Without these individuals, we cannot advance into the future.

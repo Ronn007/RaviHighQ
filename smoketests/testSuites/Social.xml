@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Social Suite 4.4">
+	<parameter name="appURL" value="https://autoind15.hqdev.highq.com/autoind15/"/>
+	<parameter name="dbDomain" value="db6.prod.hqdev.india"/>
+	<parameter name="dbPort" value="1501"/>
+	<parameter name="dbUsername" value="autoind15user"/>
+	<parameter name="dbPassword" value="autoind15pass"/>
+	<parameter name="dbSaPassword" value="Admin123"/>
+	<parameter name="dbName" value="autoind15"/>
+	<parameter name="browserType" value="chrome" />
+
+	<listeners>
+        <listener class-name="com.highq.listeners.ScreenshotListener"/>
+	</listeners>
+
+	<test name="Site Navigation">
+	<classes>
+		<class name="com.highq.test.siteAdmin.SiteNavigation_TC0886" />
+    </classes>
+    </test> 
+
+	<test name="System Audits Docusign">
+	<classes>
+		<class name="com.highq.test.systemAdmin.DocuSignAudit_TC2851" />
+	</classes>
+	</test> 
+
+</suite>   

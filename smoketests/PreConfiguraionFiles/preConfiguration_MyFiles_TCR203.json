@@ -1,0 +1,71 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "file203.com",
+				"Internal": true,
+				"users": ["usernormal1", "usernormal2"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "file203.com",
+				"user 1": {
+					"id": "usernormal1",
+					"newPassword": ""
+					},
+				"user 2": {
+					"id": "usernormal2",
+					"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "MyFiles_TCR0203"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["files","activity"],
+			"siteUsers": ["usernormal1@file203.com","usernormal2@file203.com"],
+			"Users": {
+				"user1": {
+					"id": "usernormal1@file203.com",
+					"Permissions": {
+						"modules": ["files","activity"],
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user2": {
+					"id": "usernormal2@file203.com",
+					"Permissions": {
+						"Modules": {
+						"Activity": {
+								"View": true
+								}
+						},						
+						"AdminGroups": {
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "smoke.com",
+				"Internal": true,
+				"users": [
+					"normalsmokeuser1",
+					"siteadminsmokeuser1"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "smoke.com",
+					"user 1": {
+						"id": "normalsmokeuser1",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "siteadminsmokeuser1",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "People_TCR0251"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"home",
+				"files",
+				"people",
+				"wiki"
+			],
+			"siteUsers": [
+				"normalsmokeuser1@smoke.com",
+				"siteadminsmokeuser1@smoke.com"
+			],
+			"Users": {
+				"user1": {
+					"id": "normalsmokeuser1@smoke.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "siteadminsmokeuser1@smoke.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

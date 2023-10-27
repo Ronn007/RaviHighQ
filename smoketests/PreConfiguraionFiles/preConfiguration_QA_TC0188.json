@@ -1,0 +1,75 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "qa.com",
+				"Internal": true,
+				"users": ["sitenormaluser", "siteadminuser"]
+			}
+		},
+		"userResetData": {
+			"newPassword": "NewPassword@123",
+			"userResetPasswordData": {
+				"user 1": {
+					"id": "sitenormaluser@qa.com",
+					"password": "Password@123"
+				},
+				"user 2": {
+					"id": "siteadminuser@qa.com",
+					"password": "Password@123"
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg","addSystemAdminUsers","createSite","setGroupPermission","enableModules","addsiteuserswithoutroles","setSiteUserRoles"],
+			"Sites": {
+				"name": "QAndA_TC0188"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["home", "files", "wiki", "tasks","q&a"],
+			"siteUsers": ["sitenormaluser@qa.com","siteadminuser@qa.com"],
+			"Users": {
+				"user1": {
+					"id": "sitenormaluser@qa.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user2": {
+					"id": "siteadminuser@qa.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+
+					}
+				}
+			}
+						
+		}	
+			
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "l5.com",
+				"Internal": true,
+				"users": ["usernormal1", "usersiteadmin"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+			"Organization 1": {
+				"name": "l5.com",
+				"user 1": {
+					"id": "usernormal1",
+					"newPassword": ""
+					},
+				"user 2": {
+					"id": "usersiteadmin",
+					"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg", "addSystemAdminUsers", "createSite", "setGroupPermission", "enableModules", "addsiteuserswithoutroles", "setSiteUserRoles"],
+			"Sites": {
+				"name": "File_TCR0242"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["usernormal1@l5.com","usersiteadmin@l5.com"],
+			"Users": {
+				"user1": {
+					"id": "usernormal1@l5.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							}
+														
+						},
+						"Files": {
+							"Admin": true
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user2": {
+					"id": "usersiteadmin@l5.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+							}
+														
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"GlobalData": 
+	{
+		"sysAdminEmail": "auto@highq.com",
+		"sysAdminPassword": "Pa&&worD123",
+		
+		"OrgData": 
+		{
+			"Organization 1": 
+			{
+				"name": "file.com", "Internal": true,"users": ["normal.user27"]
+			}
+		},
+		
+		"userResetData": 
+		{
+			"defaultPassword": "Password@12345rd",
+			"userResetPasswordData": 
+			{
+				"Organization 1": 
+				{
+					"name": "file.com",
+					"user 1": { "id": "normal.user27", "newPassword": "" }
+				}
+			},
+			
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		
+		"PreConfiguration": 
+		{
+			"PreConfiguration 1": ["setOrg","addSystemAdminUsers","createSite","setGroupPermission","enableModules","addsiteuserswithoutroles","setSiteUserRoles"],
+			"Sites": { "name": "TC2704_Matrix" },
+			"SiteGroupPermission": false,
+			"modules": ["all"],
+			"siteUsers": ["normal.user27@file.com"],
+			
+			"Users": {
+					   "user1": {            "id": "normal.user27@file.com",
+					        				 "Permissions": 
+					        				 {
+					        				 "Files": {"Admin":true},
+					        				 "Modules": {"Files":  { "View": true}},
+						     				 "AdminGroups": {}
+					        				 }
+					            }                 
+				    }
+		}
+	}
+}

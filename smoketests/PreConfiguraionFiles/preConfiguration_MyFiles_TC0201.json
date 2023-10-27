@@ -1,0 +1,89 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "file.com",
+				"Internal": true,
+				"users": [
+					"normaluser",
+					"siteadminuser"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Pa&&worD123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "l5.com",
+					"user 1": {
+						"id": "usernormal21",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "usersiteadmin21",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": ""
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"all"
+			],
+			"siteUsers": [
+				"normaluser@file.com",
+				"siteadminuser@file.com"
+			],
+			"Users": {
+				"user1": {
+					"id": "normaluser@file.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "siteadminuser@file.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+							
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

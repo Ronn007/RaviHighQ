@@ -1,0 +1,86 @@
+{
+"DataVisualisation": {
+			"chartType": ["Multi-series Column","Standard Pie","Stacked Column", "Standard Column"]
+		},
+	"GlobalData": {
+		"sysAdminEmail": "krishna.bhadani@highq.com",
+		"sysAdminPassword": "Admin@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": [
+					"normal.userhome",
+					"site.adminhome"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Admin@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "highq.com",
+					"user 1": {
+						"id": "normal.userhome",
+						"newPassword": "Admin@123"
+					},
+					"user 2": {
+						"id": "site.adminhome",
+						"newPassword": "Admin@123"
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"addUsersInAdminGroups",
+				"createGroup",
+				"setModulePermissionOfGroup"
+			],
+			"Sites": {
+				"name": "Home_TC2706_part2"
+			},
+			"SiteGroupPermission": true,
+			"modules": ["home", "files", "tasks"],
+			"siteUsers": [
+				"normal.userhome@highq.com",
+				"site.adminhome@highq.com"
+			],
+			"UserGroups": {
+				"group1": {
+					"name": "Group1",
+					"description": "task test case",
+					"copyFolderAndFilePermissionFrom": "",
+					"members": "normal.userhome@highq.com,site.adminhome@highq.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Files": {
+								"View": true
+							},
+							"Tasks": {
+								"Edit": true,
+								"View": true
+							}
+						}
+					}
+				}
+			},
+			"adminGroups": {
+				"Site admin": {
+					"members": "site.adminhome@highq.com"
+				}
+			}
+		}
+	}
+}

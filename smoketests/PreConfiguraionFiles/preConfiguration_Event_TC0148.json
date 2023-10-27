@@ -1,0 +1,82 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "eventorg.com",
+				"Internal": true,
+				"users": ["sitenormaluser", "siteadminuser"]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "NewPassword@123",
+			"Organization 1": {
+					"name": "sitelevel0166.com",
+			"userResetPasswordData": {
+				"user 1": {
+					"id": "sitenormaluser",
+					"password": "Password@123"
+				},
+				"user 2": {
+					"id": "siteadminuser",
+					"password": "Password@123"
+				}
+			 }	
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+
+
+		"PreConfiguration": {
+			"PreConfiguration 1": ["setOrg","addSystemAdminUsers","createSite","setGroupPermission","enableModules","addsiteuserswithoutroles","setSiteUserRoles"],
+			"Sites": {
+				"name": "Event_TC0148"
+			},
+			"SiteGroupPermission": false,
+			"modules": ["home", "files", "wiki", "tasks","events"],
+			"siteUsers": ["sitenormaluser@eventorg.com","siteadminuser@eventorg.com"],
+			"Users": {
+				"user1": {
+					"id": "sitenormaluser@eventorg.com",
+					"Permissions": {
+						"Modules": {
+							"Files": {
+								"View": true
+							},
+							"Event": {
+								"Edit": true,
+								"View": true
+							}
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+
+						}
+
+					}
+				},
+				"user2": {
+					"id": "siteadminuser@eventorg.com",
+					"Permissions": {
+						"Modules": {
+							
+						},
+						"Files": {
+
+						},
+						"AdminGroups": {
+							"site admin": true
+						}
+
+					}
+				}
+			}
+						
+		}	
+			
+	}
+}

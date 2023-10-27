@@ -1,0 +1,97 @@
+{
+	"GlobalData": {
+		"sysAdminEmail": "ravi.middha@highq.com",
+		"sysAdminPassword": "Password@123",
+		"OrgData": {
+			"Organization 1": {
+				"name": "highq.com",
+				"Internal": true,
+				"users": [
+					"normaluser",
+					"adminuser"
+				]
+			}
+		},
+		"userResetData": {
+			"defaultPassword": "Password@123",
+			"userResetPasswordData": {
+				"Organization 1": {
+					"name": "highq.com",
+					"user 1": {
+						"id": "normaluser",
+						"newPassword": ""
+					},
+					"user 2": {
+						"id": "adminuser",
+						"newPassword": ""
+					}
+				}
+			},
+			"userStatus": "Active",
+			"isStatusLocked": false
+		},
+		"PreConfiguration": {
+			"PreConfiguration 1": [
+				"setOrg",
+				"addSystemAdminUsers",
+				"createSite",
+				"setGroupPermission",
+				"enableModules",
+				"addsiteuserswithoutroles",
+				"setSiteUserRoles"
+			],
+			"Sites": {
+				"name": "Home_TCR0257"
+			},
+			"SiteGroupPermission": false,
+			"modules": [
+				"All"
+			],
+			"siteUsers": [
+				"above all"
+			],
+			"Users": {
+				"user1": {
+					"id": "normaluser@highq.com",
+					"Permissions": {
+						"Modules": {
+							"Home": {
+								"View": true
+							},
+							"Activity": {
+								"View": true
+								}
+						},
+						
+						"Files": {
+							"View": true
+						},
+						
+						"AdminGroups": {
+							
+						}
+					}
+				},
+				"user2": {
+					"id": "adminuser@highq.com",
+					"Permissions": {
+						"Modules": {
+							"All": {
+								"View": true,
+								"Edit": true
+							}
+						},
+						
+						"Files": {
+							"View": true
+						},
+						
+						"AdminGroups": {
+							"site admin": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

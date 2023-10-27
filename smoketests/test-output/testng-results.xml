@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Feature Suite 4.4" duration-ms="76585" started-at="2018-07-09T11:19:41Z" finished-at="2018-07-09T11:20:57Z">
+    <groups>
+    </groups>
+    <test name="File  Module Online Office " duration-ms="76585" started-at="2018-07-09T11:19:41Z" finished-at="2018-07-09T11:20:57Z">
+      <class name="com.highq.test.siteAdmin.SiteAdmin_TC0041">
+        <test-method status="PASS" signature="backupTestOutput()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="backupTestOutput" is-config="true" duration-ms="240" started-at="2018-07-09T16:49:41Z" finished-at="2018-07-09T16:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backupTestOutput -->
+        <test-method status="PASS" signature="initializeDBParameter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="initializeDBParameter" is-config="true" duration-ms="1" started-at="2018-07-09T16:49:41Z" finished-at="2018-07-09T16:49:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[db5.prod.hqdev.india]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1501]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Welcome123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Welcome123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[collabscrum14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDBParameter -->
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="initializeTestBaseSetup" is-config="true" duration-ms="4855" started-at="2018-07-09T16:49:41Z" finished-at="2018-07-09T16:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://collabscrum14.hqdev.highq.com/collabscrum14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="setUp" is-config="true" duration-ms="1" started-at="2018-07-09T16:49:46Z" finished-at="2018-07-09T16:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TC0041()[pri:1, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="TC0041" duration-ms="70790" started-at="2018-07-09T16:49:46Z" finished-at="2018-07-09T16:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC0041 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.highq.test.siteAdmin.SiteAdmin_TC0041@a514af7]" name="tearDown" is-config="true" duration-ms="797" started-at="2018-07-09T16:50:57Z" finished-at="2018-07-09T16:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.highq.test.siteAdmin.SiteAdmin_TC0041 -->
+    </test> <!-- File  Module Online Office  -->
+  </suite> <!-- Feature Suite 4.4 -->
+</testng-results>
